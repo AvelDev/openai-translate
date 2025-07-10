@@ -67,7 +67,7 @@ const TranslateBox = () => {
       ></textarea>
       {show ? (
         <>
-          <h1>Select language 👇</h1>
+          <h1>Your translation 👇</h1>
           <textarea
             name="output"
             id="output"
@@ -79,7 +79,7 @@ const TranslateBox = () => {
         </>
       ) : (
         <>
-          <h1>Your translation 👇</h1>
+          <h1>Select language 👇</h1>
           <label htmlFor="french">
             <input
               type="radio"
