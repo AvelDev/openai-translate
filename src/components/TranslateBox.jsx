@@ -21,17 +21,31 @@ const TranslateBox = () => {
       const messages = [
         {
           role: "system",
-          content: `Twoim zadaniem będzie tłumaczenie tekstu na język, który poda uzytkownik
+          content:
+            "Towim zadaniem będzie tłumacznie słów z jednego języka na drugi",
+        },
+        {
+          role: "user",
+          content: `
+        '''
+        Jak się masz?
+        ''' 
+        
+        Language: English
         `,
+        },
+        {
+          role: "assistant",
+          content: "How are you?",
         },
         {
           role: "user",
           content: `
         '''
         ${input}
-        ''' 
+        '''
         
-        Na język ${language}.
+        Langugae: ${language}.
         `,
         },
       ];
